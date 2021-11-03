@@ -1,7 +1,8 @@
 <div class='product-details'>
+
   {{! Header }}
   <section>
-    <h3>Beats Solo Wireless Headphones</h3>
+    <h3>{{@name}}</h3>
     <div class='text-warning'>
       <i class='fa fa-star'></i>
       <i class='fa fa-star'></i>
@@ -10,9 +11,10 @@
       <i class='fa fa-star-half-o'></i>
     </div>
   </section>
+
   {{! Price }}
   <section class={{unless @isDetails 'h4'}}>
-    <del class='small text-block-50'>{{currency @price.original}}</del>
+    <del class='small text-black-50'>{{currency @price.original}}</del>
     <i class='text-danger font-weight-bold'>{{currency @price.current}}</i>
   </section>
 

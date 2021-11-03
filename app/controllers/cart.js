@@ -22,7 +22,10 @@ export default class CartController extends Controller {
   @action
   updateItemCount(item, event) {
     const count = event.target.value;
-    if (count >= 0) item.count = count;
-    else item.count = 0;
+    if (count >= 0) {
+      item.count = count;
+    } else {
+      item.count = 0;
+    }
   }
 }
